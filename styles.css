@@ -103,6 +103,19 @@ a:hover {
   width: 50%;
 }
 
+.social-media {
+  text-align: center;
+}
+
+.social-media a {
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
 .footer {
   text-align: center;
   color: var(--muted-text);
