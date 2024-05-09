@@ -13,6 +13,7 @@
   --muted-text: rgba(246, 247, 243, 0.5);
   --background: var(--secondary-hl);
   --wallpaper: var(--secondary);
+  font-family: "Noto Sans", sans-serif;
 }
 
 body {
@@ -46,7 +47,7 @@ hr:after {
   content: "◂ ◆ ▸";
   padding: 0 4px;
   position: relative;
-  top: -13px;
+  top: -12px;
 }
 /* End MDN content */
 
