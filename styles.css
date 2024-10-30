@@ -1,0 +1,154 @@
+:root {
+  --primary: #ff6801;
+  --primary-hl: #f8b743;
+  --secondary: #363241;
+  --secondary-hl: #1f1b2c;
+
+  --primary-inv: #0097fe;
+  --primary-hl-inv: #0748bc;
+  --secondary-inv: #c9cdbe;
+  --secondary-hl-inv: #e0e4d3;
+
+  --text: #f6f7f3; /* Lightened version of --secondary-hl-inv */
+  --muted-text: rgba(246, 247, 243, 0.5);
+  --background: var(--secondary-hl);
+  --wallpaper: var(--secondary);
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2em;
+  text-align: left;
+  color: var(--text);
+  background-color: var(--wallpaper);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "PT Serif", serif;
+  text-align: center;
+}
+
+/* Adapted from MDN content: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr#example */
+hr {
+  border: none;
+  border-top: 0.2em solid var(--primary-hl);
+  color: var(--primary-hl);
+  overflow: visible;
+  text-align: center;
+  height: 0px;
+  margin: 2em auto 2em;
+}
+
+hr:after {
+  background: var(--background);
+  content: "◂ ◆ ▸";
+  padding: 0 4px;
+  position: relative;
+  top: -12px;
+}
+/* End MDN content */
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  margin: 1em auto 1em;
+  line-height: 1.2em;
+}
+
+a {
+  color: var(--primary-hl);
+}
+
+a:hover {
+  opacity: 75%;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 0.25em;
+}
+
+.main {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 1rem 2rem;
+  border-style: solid;
+  border-color: var(--primary);
+  border-width: 1rem 0rem 0rem 0rem;
+  background-color: var(--background);
+}
+
+.icon {
+  text-align: center;
+}
+
+.icon > img {
+  margin-bottom: 2em;
+  border: 5px solid transparent;
+  box-shadow: 1rem -1em 0rem 0rem var(--primary);
+  width: 50%;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media a {
+  color: var(--text);
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.footer,
+.footer i {
+  text-align: center;
+  color: var(--muted-text);
+}
+
+.pt-serif {
+  font-family: "PT Serif", serif;
+}
+
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 4.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .main {
+    border: none;
+    width: 500px;
+    margin: 4rem auto 1rem;
+    padding: 4rem 2rem 4rem;
+    box-shadow: 1rem -1rem 0rem 0rem var(--primary);
+  }
+}
