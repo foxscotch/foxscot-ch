@@ -12,10 +12,7 @@ goes for [FontAwesome](https://fontawesome.com/) Brands, which I used for the
 brand icons.
 
 Likewise, the images you see on the real website are also not present. If you
-want to reuse this code you'll have to replace them with your own. But while I'm
-on the subject, the excellent piece they're cropped from was by
-[graskip](https://twitter.com/graskip)
-([alternate link just in case](https://graskip.tumblr.com/)).
+want to reuse this code you'll have to replace them with your own.
 
 Last but not least, the CSS reset I used is of course
 [Eric A. Meyer's](https://meyerweb.com/eric/tools/css/reset/).
