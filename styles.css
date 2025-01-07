@@ -1,23 +1,38 @@
 :root {
-  --primary: #ff6801;
-  --primary-hl: #f8b743;
-  --secondary: #363241;
-  --secondary-hl: #1f1b2c;
+  /* --- Character Palettes --- */
 
-  --primary-inv: #0097fe;
-  --primary-hl-inv: #0748bc;
-  --secondary-inv: #c9cdbe;
-  --secondary-hl-inv: #e0e4d3;
+  --fox-pink: #ff0055;
+  --fox-pink-dark: #b3003b;
+  --fox-white: #ffffff;
+  --fox-black: #0d0508;
 
-  --text: #f6f7f3; /* Lightened version of --secondary-hl-inv */
+  --sebastien-primary: #ff6701;
+  --sebastien-primary-light: #f9b844;
+  --sebastien-secondary: #353140;
+  --sebastien-secondary-hl: #1e1a2b;
+
+  --hanna-primary: #0297fe;
+  --hanna-primary-dark: #0647bb;
+  --hanna-secondary: #e2e6d4;
+  --hanna-secondary-light: #f1f0ef;
+  --hanna-secondary-dark: #cfd4c0;
+
+  /* --- Page Colors --- */
+
+  --primary: var(--fox-pink);
+  --primary-hl: var(--fox-pink-dark);
+  --secondary: var(--fox-black);
+  --secondary-hl: var(--fox-white);
+
+  --text: var(--secondary);
   --muted-text: rgba(246, 247, 243, 0.5);
   --background: var(--secondary-hl);
   --wallpaper: var(--secondary);
+
   font-family: "Noto Sans", sans-serif;
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
   font-size: 1.2em;
   text-align: left;
   color: var(--text);
@@ -44,10 +59,11 @@ hr {
 
 hr:after {
   background: var(--background);
-  content: "◂ ◆ ▸";
-  padding: 0 4px;
+  font-size: 1.4em;
+  content: "✦";
+  padding: 0 12px;
   position: relative;
-  top: -12px;
+  top: -16px;
 }
 /* End MDN content */
 
@@ -117,9 +133,27 @@ a:hover {
   margin-right: 0;
 }
 
+.social-media.discord {
+  font-size: 0.8em;
+  margin-top: 0.6em;
+}
+
+.button {
+  margin-top: 4rem;
+}
+
+.button img {
+  display: block;
+  margin: auto;
+  height: 62px;
+  width: 176px;
+  image-rendering: pixelated;
+}
+
 .footer,
 .footer i {
   text-align: center;
+  line-height: 2rem;
   color: var(--muted-text);
 }
 
@@ -148,7 +182,7 @@ a:hover {
     border: none;
     width: 500px;
     margin: 4rem auto 1rem;
-    padding: 4rem 2rem 4rem;
+    padding: 4rem 2rem 2rem;
     box-shadow: 1rem -1rem 0rem 0rem var(--primary);
   }
 }
