@@ -1,4 +1,28 @@
-img/
-*.png
-*.woff2
-*.min.css
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Font files, FA CSS
+static/webfonts/
+static/fontawesome.min.css
+static/brands.min.css
