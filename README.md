@@ -14,8 +14,7 @@ The binary font files for the fonts used are not included in this repository,
 but you can get them yourself with little effort from
 [Google Fonts](https://fonts.google.com/). They should be placed in
 static/webfonts/, and you'll obviously have to update fonts.css if you're not
-using the same two. Same goes for [FontAwesome](https://fontawesome.com/)
-Brands, which I used for the brand icons.
+using the same two.
 
 Otherwise, you should be good to go. You should also replace the images in
 src/lib/assets if you aren't me, though. And maybe change the colors.

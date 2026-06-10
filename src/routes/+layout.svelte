@@ -1,6 +1,10 @@
 <script lang="ts">
+  import { config } from "@fortawesome/fontawesome-svg-core";
+  import "@fortawesome/fontawesome-svg-core/styles.css";
   import favicon from "$lib/assets/favicon.png";
   import icon from "$lib/assets/favicon.png";
+
+  config.autoAddCss = false;
 
   let { children } = $props();
 </script>
@@ -48,13 +52,86 @@
     --background: var(--secondary-hl);
     --wallpaper: var(--secondary);
 
+    /* --- Other Page Attributes --- */
+
+    --desktop-min-width: 576px;
+
     font-family: "Noto Sans", sans-serif;
   }
 
-  :global(body) {
-    font-size: 1.2em;
-    text-align: left;
-    color: var(--text);
-    background-color: var(--wallpaper);
+  :global {
+    body {
+      font-size: 1.2em;
+      text-align: left;
+      color: var(--text);
+      background-color: var(--wallpaper);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "PT Serif", serif;
+      text-align: center;
+    }
+
+    /* Adapted from MDN content: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr#example */
+    hr {
+      border: none;
+      border-top: 0.2em solid var(--primary-hl);
+      color: var(--primary-hl);
+      overflow: visible;
+      text-align: center;
+      height: 0px;
+      margin: 2em auto 2em;
+    }
+
+    hr:after {
+      background: var(--background);
+      font-size: 1.4em;
+      content: "✦";
+      padding: 0 12px;
+      position: relative;
+      top: -16px;
+    }
+    /* End MDN content */
+
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    h3 {
+      font-size: 1.2em;
+    }
+
+    p {
+      margin: 1em auto 1em;
+      line-height: 1.2em;
+    }
+
+    a {
+      color: var(--primary-hl);
+    }
+
+    a:hover {
+      opacity: 75%;
+    }
+
+    @media (min-width: 576px) {
+      h1 {
+        font-size: 4.5em;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+
+      h3 {
+        font-size: 1.5em;
+      }
+    }
   }
 </style>
