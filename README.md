@@ -27,7 +27,7 @@ Last but not least, the CSS reset I used is of course
 Install dependencies with `pnpm install`, then start a development server:
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
 ## Building
@@ -35,5 +35,5 @@ npm run dev
 To generate a production build:
 
 ```sh
-npm run build
+pnpm run build
 ```
